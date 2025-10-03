@@ -155,7 +155,7 @@ async function captureHtml({ html, width = 1200, height = 800, deviceScaleFactor
     // Set content with enhanced options
     await page.setContent(cleanHtml, { 
       waitUntil: ['domcontentloaded', 'networkidle0'],
-      timeout: 30000
+      timeout: 120000
     });
 
     console.log('Waiting for rendering stabilization...');
